@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Css Game</title>
+</head>
+
+<body class="container">
+    <div class="game">
+        <div class="header">
+            <div class="level-title" id="level-title"></div>
+            <div class="level-sub-title" id="level-sub-title"></div>
+        </div>        
+        <div class="level-wrapper">
+            <div class="level-description" id="level-description"></div>
+            <input class="input-selector" id="input-selector" type="text"
+                name="selector" onchange="analyzeSelector()"
+                onkeyup="analyzeSelector()">
+            <ul class="options" id="options">
+            </ul>
+        </div>
+        <div class="btn-container">
+            <button class="btn back" type="button" onclick="back()"> Back </button>
+            <button class="btn next" type="button" onclick="next()"> Next </button>
+        </div>
+    </div>
+
+</body>
+<script src="./javacript/process-input.js"></script>
+
+</html>
